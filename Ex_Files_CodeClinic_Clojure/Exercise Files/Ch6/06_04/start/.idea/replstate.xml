@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ReplState" timestamp="1470181596637">{:repl-history {:ide [], :local [&quot;(load-csvs)&quot; &quot;(generate-table (first (load-csvs)))&quot;], :remote []}}</component>
+</project>

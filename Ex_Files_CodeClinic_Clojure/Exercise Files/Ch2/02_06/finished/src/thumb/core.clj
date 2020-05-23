@@ -1,0 +1,1 @@
+(ns thumb.core)

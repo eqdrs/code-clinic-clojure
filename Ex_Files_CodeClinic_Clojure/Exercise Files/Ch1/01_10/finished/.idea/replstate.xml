@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ReplState" timestamp="1470335521687">{:repl-history {:ide [], :local [&quot;(cal-&gt;ms \&quot;Mar/01/2015\&quot;)&quot; &quot;(cal-&gt;ms \&quot;Mar/01/2015asdf\&quot;)&quot; &quot;(transform-row \&quot;2015_01_01 00:07:43\\t19.50\\t30.61\\t14.66\\t81.20\\t155.63\\t11.00\\t 8.60\&quot;)&quot; &quot;(db/find-last-datetime)&quot; &quot;(sync!)&quot; &quot;(from-long (db/find-last-datetime))&quot; &quot;(display-query-result \&quot;Jan/01/2012\&quot; \&quot;Dec/10/2015\&quot;)&quot;], :remote []}}</component>
+</project>

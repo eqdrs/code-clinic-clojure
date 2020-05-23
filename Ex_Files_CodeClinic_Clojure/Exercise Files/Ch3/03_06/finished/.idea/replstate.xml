@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ReplState" timestamp="1470260947481">{:repl-history {:ide [], :local [&quot;(clojure.math.combinatorics/permutations [3]\n                                         )&quot; &quot;(clojure.math.combinatorics/permutations [1 2 3]\n                                         \n                                         )&quot; &quot;(combo/permutations [1 2 3]\n                                         \n                                         )&quot; &quot;(combo/permutations [0 1 2])&quot; &quot;(generate 4)&quot; &quot;(generate 8)&quot;], :remote []}}</component>
+</project>

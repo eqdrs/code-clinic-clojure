@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ReplState" timestamp="1470349510094">{:repl-history {:ide [], :local [&quot;(def a (load-image \&quot;resources/images/1.jpg\&quot;))&quot; &quot;a&quot; &quot;(def b (load-image \&quot;resources/images/1a.jpg\&quot;))&quot; &quot;(get-image-meta a)&quot; &quot;(diff-dimensions a b)&quot; &quot;(find-src-templ \&quot;resources/images/1.jpg\&quot; \&quot;resources/images/1a.jpg\&quot;)&quot; &quot;(apply match-template (find-src-templ \&quot;resources/images/1.jpg\&quot; \&quot;resources/images/1a.jpg\&quot;))&quot; &quot;(apply match (find-src-templ \&quot;resources/images/1.jpg\&quot; \&quot;resources/images/1a.jpg\&quot;))&quot; &quot;(apply match (find-src-templ \&quot;resources/images/1.jpg\&quot; \&quot;resources/images/2.jpg\&quot;))&quot; &quot;(best-match \&quot;resources/images/2.jpg\&quot; \&quot;resources/images/2a.jpg\&quot;)&quot;], :remote []}}</component>
+</project>

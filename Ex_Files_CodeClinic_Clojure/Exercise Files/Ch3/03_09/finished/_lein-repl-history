@@ -1,0 +1,2 @@
+(clojure.match.combinatorics/permutations [0 1 2])
+(clojure.math.combinatorics/permutations [0 1 2])

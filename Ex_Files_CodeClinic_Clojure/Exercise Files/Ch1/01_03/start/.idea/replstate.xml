@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ReplState" timestamp="1470327247909">{:repl-history {:ide [], :local [&quot;(build-url 2012)&quot; &quot;(fetch-for-year 2012)&quot; &quot;(take 10 (fetch-seq-for-year 2012))&quot;], :remote []}}</component>
+</project>

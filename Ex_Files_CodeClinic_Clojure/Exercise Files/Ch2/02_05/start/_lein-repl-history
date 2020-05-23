@@ -1,0 +1,4 @@
+(clojure.lang.RT org.opencv.core.Core/NATIVE_LIBRARY_NAME)
+(clojure.lang.RT/loadLibrary org.opencv.core.Core/NATIVE_LIBRARY_NAME)
+(org.opencv.highgui/imread "resources/images/1a.jpg")
+(org.opencv.highgui.Highgui/imread "resources/images/1a.jpg")

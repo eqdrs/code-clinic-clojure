@@ -1,0 +1,45 @@
+### Building and Installing OpenCV jars manually
+
+In case the provided native jar files do not work for your platform this document describes the process of creating it manually.
+
+I devised the script by following the Clojure OpenCV Installation tutorial here:
+http://docs.opencv.org/2.4/doc/tutorials/introduction/clojure_dev_intro/clojure_dev_intro.html
+
+If you already have OpenCV installed with Java extensions and Leiningen installed you can skip down
+to "Install the java specific libs as local repository" anchor tag. Otherwise, you'll need to install OpenCV for your platform with java bindings. On Mac, you can do this using homebrew and on windows, you may be to find static builds on sourceforge. Otherwise, you may need to build it from source. Our code uses OpenCV version 2.4.13
+
+http://docs.opencv.org/2.4/doc/tutorials/introduction/clojure_dev_intro/clojure_dev_intro.html#install-the-java-specific-libs-as-local-repository
+
+The first step this tutorial takes copies the opencv jar and dynamic lib built for your platform to a working directory, which will need to be the directory where our project.clj and src folder are for Chapter 2.
+
+With the .jar and dynamic library file copied there, we're ready to create the jar file for the dynamic
+library.
+
+To do that, we'll create a folder called native and put our dynamic library inside. E.g.
+
+  mkdir native
+
+Once you've built this folder, copy the dynamic library (.dylib .so or .dll file)
+into that directory. For 64-bit mac and using the version as of this writing, this will look like:
+
+  cp libopencv_java2413.dylib native
+
+With this in place, we're ready to build the jar file. The command to do this is:
+
+jar -cMf opencv-native-2413.jar native
+
+At this point, you can delete the native folder if you like, using:
+
+rm -rf native
+
+Now that we have both jar files in place we're ready to install these into Leiningen's local repo using
+the localrepo Leiningen plugin. The plugin is installed by the project using:
+
+lein deps
+
+To accomplish this, run the following:
+
+lein localrepo install opencv-2413.jar opencv/opencv 2.4.13
+lein localrepo install opencv-native-2413.jar opencv/opencv-native 2.4.13
+
+With this in place, you can test your installation by navigating into a folder where the final code is in place, running lein deps, followed by lein repl. The REPL should be able load in the dynamic library successfully with no error messages
